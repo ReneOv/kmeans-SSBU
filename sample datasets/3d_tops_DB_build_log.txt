@@ -1,0 +1,10 @@
+Player 3D standings database logs
+Start date: 22/5/2021
+End date: 22/11/2021
+Minimum participants: 50
+Game: Ultimate
+Tournaments queried: 64
+Distinct players: 4229
+Only take Top: 50
+Tournaments after filters: 97
+Time elapsed to build: 340.2414619922638
