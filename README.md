@@ -42,7 +42,7 @@ Once we have our first page of tournaments queried, we need to filter out those 
 
 ![query1](images/tournamentquery.png)
 
-This is done on the function `tournament_show_event_by_game_size_dated()`. It will discard and not return tournaments that don't meet the participant minimum. Because of pagination, we're limited to querying 32 non-filtered tournaments, to then grab the ones we need.  
+This is done on the function `tournament_show_event_by_game_size_dated()`. It will discard and not return tournaments that don't meet the participant minimum. Because of pagination, we're limited to querying 32 non-filtered tournaments, to then grab the ones we need. It also takes in a `videogameId`, which we can change for whatever game we want. In this case, I was working with SSBU, but if you change the id to 1, you'll pull SSBM tournaments.  
 Once a tournament is shown as useful, we iterate through its participants, also paginated, and grab their name, placement, and id, 64 at a time.
 
 ![query2](images/placementquery.png)
@@ -89,3 +89,9 @@ This 3D graph shows the 3 tiers of players, compared against their average place
 In order to use the "Top Play Variant", you must construct your dataset using the `3D Pro` Python file.
 
 Afterwards, follow the same procedure as the 3D variant on the Jupyter Notebook, just make sure to load the correct .csv file!!
+
+---
+
+## Join the discussion
+
+https://old.reddit.com/r/smashbros/comments/qzmjlt/i_created_a_tool_that_gives_you_a_power_ranking/
